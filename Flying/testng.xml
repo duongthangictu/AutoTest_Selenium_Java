@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite All" verbose="1">
+
+    <test name="Regression Test All class on firefox">
+        <classes>
+            <class name="automation.testsuite.OneWay_Test"/>
+            <class name="automation.testsuite.RoundTrip_Test"/>
+            <class name="automation.testsuite.MultiCity_Test"/>
+        </classes>
+    </test>
+
+    
+</suite>

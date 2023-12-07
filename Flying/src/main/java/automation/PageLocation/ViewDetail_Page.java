@@ -9,7 +9,7 @@ import automation.common.CommonBase;
 
 public class ViewDetail_Page extends CommonBase {
 	WebDriver driver;
-	
+
 	@FindBy(xpath = "(//a[normalize-space()='View Details'])[1]")
 	private WebElement btnViewDetail;
 
@@ -17,8 +17,8 @@ public class ViewDetail_Page extends CommonBase {
 		this.driver = _driver;
 		PageFactory.initElements(driver, this);
 	}
-	
-	public void viewDetail()  {
+
+	public void viewDetail() {
 		btnViewDetail.click();
 	}
 

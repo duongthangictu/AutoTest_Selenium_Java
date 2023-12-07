@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.OrderProduct_Test">
+      <class name="automation.testsuite.Filter_Test">
         <methods>
-          <include name="closeChromeBrowser"/>
           <include name="openChromeBrowser"/>
-          <include name="orderProductSuccess"/>
+          <include name="closeChromeBrowser"/>
+          <include name="filter"/>
         </methods>
-      </class> <!-- automation.testsuite.OrderProduct_Test -->
+      </class> <!-- automation.testsuite.Filter_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

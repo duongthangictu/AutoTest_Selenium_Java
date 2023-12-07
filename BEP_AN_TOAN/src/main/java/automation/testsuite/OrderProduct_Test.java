@@ -72,7 +72,7 @@ public class OrderProduct_Test extends CommonBase {
 		filter_HomePage.filter_HomePage();
 
 		OrderProduct_Page order = new OrderProduct_Page(driver);
-		order.orderProductSuccess_Page("", "", "", "!");
+		order.orderProductSuccess_Page("", "", "", "");
 		order.titleOrder_FAIL_DiaChi.isDisplayed();
 	}
 

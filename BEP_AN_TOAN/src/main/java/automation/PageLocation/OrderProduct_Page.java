@@ -42,6 +42,7 @@ public class OrderProduct_Page extends CommonBase {
 	}
 
 	public void orderProductSuccess_Page(String _hoVaTen, String _SDT, String _diaChi, String _luuY) {
+		pause(2000);
 		txtHoTen.sendKeys(_hoVaTen);
 		txtSDT.sendKeys(_SDT);
 		txtDiaChi.sendKeys(_diaChi);

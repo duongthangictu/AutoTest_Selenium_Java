@@ -23,6 +23,6 @@ public class Filter_Test extends CommonBase {
 	@AfterTest
 	public void closeChromeBrowser() {
 		pause(3000);
-//		quitDriver(driver);
+		quitDriver(driver);
 	}
 }

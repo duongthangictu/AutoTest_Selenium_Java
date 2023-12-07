@@ -25,41 +25,37 @@ public class RoundTrip_Page extends CommonBase {
 
 	@FindBy(xpath = "(//label[normalize-space()='Flying to']//following::input[@placeholder='City or airport'])[3]")
 	private WebElement flyingTo;
-	
+
 	@FindBy(xpath = "((//label[normalize-space()='Departing - Returning'])[1]//following::input)[1]")
 	private WebElement departingReturning;
 
 	@FindBy(xpath = "(//button[normalize-space()='Apply'])[1]")
 	private WebElement btnApply;
-	
+
 	@FindBy(xpath = "((//label[normalize-space()='Passengers'])[position()=2]//following::a)[1]")
 	private WebElement passengersDropdown;
-	
+
 	@FindBy(xpath = "(//i[@class='la la-plus'])[position()=6]")
 	private WebElement adults_Add;
-	
+
 	@FindBy(xpath = "(//i[@class='la la-plus'])[position()=7]")
 	private WebElement children_Add;
-	
+
 	@FindBy(xpath = "(//i[@class='la la-plus'])[position()=8]")
 	private WebElement infants_Add;
 
 	@FindBy(xpath = "(//div[normalize-space()='Economy'])[4]")
 	private WebElement coachDropdow;
-	
+
 	@FindBy(xpath = "//span[normalize-space()='Business']")
 	private WebElement business;
-	
-	
+
 	@FindBy(xpath = "(//a[normalize-space()='Search Now'])[2]")
 	private WebElement btnSearchNow;
-	
+
 	@FindBy(xpath = "//h2[normalize-space()='Flight Search Result']")
 	private WebElement titleSearchResult_Success;
-	
-	
-//	private WebElement titleSearchResult_Success = driver.findElement(By.xpath("//h2[normalize-space()='Flight Search Result']"));
-	
+
 	public RoundTrip_Page(WebDriver _driver) {
 		this.driver = _driver;
 		PageFactory.initElements(driver, this);
@@ -69,14 +65,14 @@ public class RoundTrip_Page extends CommonBase {
 		pause(1000);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click()", roundTrip_CheckBox);
-//
+
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(flyingFrom));
 		flyingFrom.sendKeys(_flyingFrom);
 		pause(1000);
 		flyingTo.sendKeys(_flyingTo);
 		pause(500);
-		
+
 		js.executeScript("window.scrollTo(0,200)");
 		js.executeScript("arguments[0].removeAttribute('readonly','readonly')", departingReturning);
 		departingReturning.click();

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-07T21:28:09 ICT" name="Default suite" finished-at="2023-12-07T21:28:53 ICT" duration-ms="44063">
+    <groups>
+    </groups>
+    <test started-at="2023-12-07T21:28:09 ICT" name="Default test" finished-at="2023-12-07T21:28:53 ICT" duration-ms="44063">
+      <class name="automation.testsuite.Projects_Test">
+        <test-method is-config="true" signature="openChromeBrowser()[pri:0, instance:automation.testsuite.Projects_Test@4dbb42b7]" started-at="2023-12-07T21:28:09 ICT" name="openChromeBrowser" finished-at="2023-12-07T21:28:15 ICT" duration-ms="5988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openChromeBrowser -->
+        <test-method signature="login()[pri:1, instance:automation.testsuite.Projects_Test@4dbb42b7]" started-at="2023-12-07T21:28:15 ICT" name="login" finished-at="2023-12-07T21:28:18 ICT" duration-ms="2248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="addProject()[pri:2, instance:automation.testsuite.Projects_Test@4dbb42b7]" started-at="2023-12-07T21:28:18 ICT" name="addProject" finished-at="2023-12-07T21:28:29 ICT" duration-ms="11444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProject -->
+        <test-method signature="filter()[pri:3, instance:automation.testsuite.Projects_Test@4dbb42b7]" started-at="2023-12-07T21:28:29 ICT" name="filter" finished-at="2023-12-07T21:28:34 ICT" duration-ms="5111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filter -->
+        <test-method signature="clear_Filter()[pri:4, instance:automation.testsuite.Projects_Test@4dbb42b7]" started-at="2023-12-07T21:28:34 ICT" name="clear_Filter" finished-at="2023-12-07T21:28:39 ICT" duration-ms="4256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear_Filter -->
+        <test-method signature="findData()[pri:5, instance:automation.testsuite.Projects_Test@4dbb42b7]" started-at="2023-12-07T21:28:39 ICT" name="findData" finished-at="2023-12-07T21:28:50 ICT" duration-ms="11825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findData -->
+        <test-method is-config="true" signature="closeChromeBrowser()[pri:0, instance:automation.testsuite.Projects_Test@4dbb42b7]" started-at="2023-12-07T21:28:50 ICT" name="closeChromeBrowser" finished-at="2023-12-07T21:28:53 ICT" duration-ms="3138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeChromeBrowser -->
+      </class> <!-- automation.testsuite.Projects_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

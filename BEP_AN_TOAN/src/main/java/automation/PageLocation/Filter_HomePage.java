@@ -71,8 +71,5 @@ public class Filter_HomePage extends CommonBase {
 		clickOuter.click();
 		pause(500);
 		muaNgay.click();
-		pause(500);
-		
-		
 	}
 }

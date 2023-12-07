@@ -22,7 +22,7 @@ public class OneWay_Test extends CommonBase {
 	
 	@AfterTest
 	public void closeChromeBrowser() {
-		pause(2000);
+		pause(3000);
 		driver.close();
 	}
 }

@@ -75,6 +75,10 @@ public class Projects_Page extends CommonBase {
 	@FindBy(xpath = "(//table[@id='project-table']//tr/td)[2]/a")
 	private WebElement findContendElement;
 
+	// Edit function
+	@FindBy(xpath = "((//div[@id='project-table_wrapper']//tr)[2]/td[last()]/a)[1]")
+	private WebElement edit_Icon;
+
 	public void addProject(String _title, String _description, String _startDate, String _deadline, String _price,
 			String _labels, String _labels2, String _EKT_Refference) {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -141,6 +145,22 @@ public class Projects_Page extends CommonBase {
 		inputSearch.sendKeys(_content_Find);
 		pause(1000);
 		findContendElement.click();
+		pause(3000);
+	}
+
+	// Edit function
+	public void edit(String _content_Find, String _price_input_Edit) {
+		pause(3000);
+		project_Link.click();
+		pause(3000);
+		inputSearch.click();
+		inputSearch.sendKeys(_content_Find);
+		pause(1000);
+		edit_Icon.click();
+		pause(1000);
+		price_input.clear();
+		price_input.sendKeys(_price_input_Edit);
+		save_button.click();
 		pause(3000);
 	}
 

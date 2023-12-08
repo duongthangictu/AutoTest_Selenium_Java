@@ -45,6 +45,12 @@ public class Projects_Test extends CommonBase {
 		projects.find("online course");
 	}
 
+	@Test(priority = 6)
+	public void editData() {
+		Projects_Page projects = new Projects_Page(driver);
+		projects.edit("OK men", "15");
+	}
+
 	@AfterTest
 	public void closeChromeBrowser() {
 		pause(3000);
